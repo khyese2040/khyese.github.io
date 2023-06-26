@@ -1,0 +1,418 @@
+body {
+  background-color: rgb(63, 63, 61);
+  background-image: url(https://static.vecteezy.com/system/resources/previews/011/236/431/non_2x/confetti-and-luxury-gold-balloon-birthday-celebration-border-free-png.png);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+  align-items: center;
+  height: 100vh;
+}
+
+h1 {
+  font-family: "Amatic SC", cursive !important;
+  font-size: 36px;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 20px;
+  background: white;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.image-container {
+  display: flex;
+  width: 100%;
+  max-width: 550px;
+  margin: 20px auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  overflow: hidden;
+  animation: fadeIn 1s ease forwards;
+  position: relative;
+}
+
+.image-container img {
+  width: 100%;
+  display: block;
+  transition: transform 0.3s ease-in-out;
+}
+
+.image-container:hover img {
+  transform: scale(1.1);
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+}
+
+.boton {
+  font-family: "Arial Black", sans-serif;
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #ffffff;
+  color: #000000;
+  text-decoration: none;
+  font-size: 18px;
+  border-radius: 30px;
+  transition: box-shadow 0.3s ease-in-out;
+  margin: 10px;
+  border: 3px solid gold;
+}
+
+.boton:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.7);
+}
+.resolucion {
+  width: 99%;
+  text-align: center;
+}
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .image-container {
+    max-width: 100%;
+    flex-direction: column;
+  }
+
+  .image-container img {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .boton {
+    display: block;
+    margin: 10px auto;
+  }
+  .image-containerr {
+    flex-direction: column;
+  }
+  .image-containerr img {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+}
+
+.msg {
+  width: 60%;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.msg p {
+  font-family: cursive;
+  color: #555;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: justify;
+}
+
+.contenedor {
+  height: 500px;
+  width: 400px;
+  margin: 30px auto;
+}
+
+.cara {
+  background-color: #af8546;
+  height: 300px;
+  width: 300px;
+  border-radius: 50%;
+  margin: auto;
+  position: relative;
+  z-index: 5;
+  animation: rotar 2s infinite ease-in-out alternate;
+}
+
+.cont-orejas {
+  margin: auto;
+  height: 100px;
+  width: 350px;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  top: 20px;
+}
+
+.cont-orejas .orejas {
+  height: 0;
+  width: 0;
+  border-right: 60px solid transparent;
+  border-top: 60px solid transparent;
+  border-left: 60px solid #9a7544;
+  border-bottom: 60px solid #9a7544;
+  border-radius: 20px;
+}
+.cont-orejas .oreja1 {
+  transform: rotate(90deg);
+  position: relative;
+  left: -40px;
+  z-index: 2;
+}
+
+.cont-orejas .oreja2 {
+  transform: rotate(-190deg);
+}
+
+.corazon {
+  height: 50px;
+  width: 50px;
+  margin: auto;
+  background-color: #fff;
+  position: relative;
+  transform: rotate(-45deg);
+}
+
+.corazon::before,
+.corazon::after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  background-color: #fff;
+  transform: translateX(25px);
+}
+
+.corazon::after {
+  transform: translateY(-25px);
+}
+
+.corazon .linea {
+  position: absolute;
+  height: 150px;
+  width: 40px;
+  border-radius: 20px;
+  background-color: #fff;
+  ruby-align: 70px;
+  left: -45px;
+  transform: rotate(45deg);
+}
+
+.cont-ojos {
+  margin: auto;
+  position: relative;
+  height: 80px;
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  top: -50px;
+}
+
+.cont-ojos .ojos {
+  height: 70px;
+  width: 80px;
+  background-color: #111;
+  border-radius: 40px 40px 30px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ojos .ocular {
+  height: 20px;
+  width: 20px;
+  background-color: #fff;
+  border-radius: 50%;
+}
+
+.box-nariz {
+  margin: auto;
+  position: relative;
+  height: 150px;
+  width: 180px;
+  border-radius: 50px 50px 40px 40px;
+  background-color: #fff;
+  top: -50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box-nariz .nariz {
+  height: 70px;
+  width: 90px;
+  border-radius: 20px 20px 50px 50px;
+  background-color: #111;
+}
+
+.nariz::before {
+  content: "";
+  position: absolute;
+  height: 50px;
+  width: 130px;
+  left: 25px;
+  background-color: #9a918d;
+  top: 130px;
+  z-index: -1;
+  border-radius: 0 0 50% 50%;
+}
+
+.lengua {
+  position: absolute;
+  left: 110px;
+  height: 120px;
+  width: 80px;
+  background-color: #d56059;
+  border-radius: 30px;
+  top: 19em;
+  z-index: -1;
+  transform-origin: top;
+  transform: scaleY(0);
+  transition: 0.4s;
+  animation: lengua 3s infinite linear alternate;
+}
+
+.cuerpo {
+  height: 350px;
+  width: 350px;
+  background-color: #fff;
+  margin: -50px auto;
+  border-radius: 40% 40% 0 0;
+  overflow: hidden;
+}
+
+.cuello {
+  margin: auto;
+  height: 200px;
+  width: 230px;
+  border-radius: 0 0 50% 50%;
+  background-color: #ccc;
+}
+
+.patas {
+  border-radius: 20px;
+  height: 120px;
+  width: 170px;
+  background-color: rgb(63, 63, 61);
+  margin: 50px auto;
+}
+
+.cuerpo::before {
+  content: "";
+  position: absolute;
+  background-color: #fff;
+  height: 250px;
+  width: 40px;
+  border-radius: 50% 50% 10px 10px;
+  margin: -100px 5px;
+  z-index: -1;
+  transform: rotate(-70deg);
+  transform-origin: bottom;
+  animation: cola 1s infinite linear alternate;
+}
+
+@keyframes rotar {
+  0% {
+    transform: rotate(0deg);
+  }
+  25%,
+  50% {
+    transform: rotate(10deg);
+  }
+  50%,
+  75% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-10deg);
+  }
+}
+
+@keyframes lengua {
+  0%,
+  25% {
+    transform: scaleY(1);
+    transform-origin: top;
+  }
+  50% {
+    transform: scaleY(1);
+    transform-origin: top;
+  }
+  75% {
+    transform: scaleY(0);
+    transform-origin: top;
+  }
+  100% {
+    transform: scaleY(1);
+    transform-origin: top;
+  }
+}
+
+@keyframes cola {
+  0% {
+    transform: rotate(10deg);
+  }
+  100% {
+    transform: (-30deg);
+  }
+}
+
+.text {
+  width: 60%;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.text p {
+  font-family: cursive;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: justify;
+  text-align: center;
+  color: #fff;
+}
+
+.image-containerr {
+  display: flex;
+  justify-content: center;
+  display: flex;
+  width: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+  animation: fadeIn 1s ease forwards;
+}
+.image-containerr img {
+  width: 350px;
+  height: auto;
+  margin-right: 50px;
+  border-radius: 50px;
+  display: block;
+  transition: transform 0.3s ease-in-out;
+}
+
+.image-containerr img:last-child {
+  margin-right: 0;
+}
+
+.image-container:hover img {
+  transform: scale(1.1);
+}

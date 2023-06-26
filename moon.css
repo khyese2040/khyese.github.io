@@ -1,0 +1,56 @@
+body {
+  background-color: rgb(63, 63, 61);
+  background-image: url(https://static.vecteezy.com/system/resources/previews/011/236/431/non_2x/confetti-and-luxury-gold-balloon-birthday-celebration-border-free-png.png);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+h1 {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: "Amatic SC", cursive !important;
+  font-size: 36px;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 20px;
+  background: white;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.image-container {
+  display: flex;
+}
+.image-container img {
+  width: 350px;
+  height: auto;
+  margin-right: 50px;
+  border-radius: 50px;
+}
+.image-container img:last-child {
+  margin-right: 0;
+}
